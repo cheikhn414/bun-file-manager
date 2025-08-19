@@ -4,6 +4,10 @@
 
 A lightning-fast command-line tool for file operations (copy, move, organize) that leverages Bun's native APIs for optimal performance.
 
+[![Bun](https://img.shields.io/badge/Built%20with-Bun-black?logo=bun)](https://bun.sh)
+[![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?logo=typescript&logoColor=white)](https://www.typescriptlang.org)
+[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+
 ## ✨ Features
 
 - **Copy files** with high performance using Bun's native APIs
@@ -18,17 +22,27 @@ A lightning-fast command-line tool for file operations (copy, move, organize) th
 ```bash
 # Clone and setup
 git clone <repository-url>
-cd file-manager
+cd bun-file-manager
 bun install
 
-# Make executable
+# Make executable (optional - for direct execution)
 chmod +x index.ts
+
+# Or install globally
+bun link
 ```
 
 ## 📖 Usage
 
 ```bash
+# Using bun run
 bun run index.ts <command> [options]
+
+# If installed globally
+fmgr <command> [options]
+
+# Direct execution (if made executable)
+./index.ts <command> [options]
 ```
 
 ### Commands
@@ -108,4 +122,24 @@ MIT License
 
 ## 🤝 Contributing
 
-Contributions are welcome! Please feel free to submit a Pull Request.
+Contributions are welcome! Please follow these steps:
+
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
+
+## 🐛 Issues & Support
+
+If you encounter any bugs or have feature requests, please [open an issue](../../issues) on GitHub.
+
+## 📊 Requirements
+
+- **Bun** >= 1.0.0
+- **Node.js** (for compatibility testing)
+
+## 🔗 Related Projects
+
+- [Bun Documentation](https://bun.sh/docs)
+- [TypeScript](https://www.typescriptlang.org)

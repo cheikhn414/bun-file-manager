@@ -4,6 +4,10 @@
 
 Un outil en ligne de commande ultra-rapide pour les opérations sur fichiers (copie, déplacement, organisation) qui exploite les APIs natives de Bun pour des performances optimales.
 
+[![Bun](https://img.shields.io/badge/Construit%20avec-Bun-black?logo=bun)](https://bun.sh)
+[![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?logo=typescript&logoColor=white)](https://www.typescriptlang.org)
+[![Licence MIT](https://img.shields.io/badge/Licence-MIT-green.svg)](LICENSE)
+
 ## ✨ Fonctionnalités
 
 - **Copie de fichiers** haute performance avec les APIs natives de Bun
@@ -18,17 +22,27 @@ Un outil en ligne de commande ultra-rapide pour les opérations sur fichiers (co
 ```bash
 # Cloner et configurer
 git clone <url-du-repository>
-cd file-manager
+cd bun-file-manager
 bun install
 
-# Rendre exécutable
+# Rendre exécutable (optionnel - pour exécution directe)
 chmod +x index.ts
+
+# Ou installer globalement
+bun link
 ```
 
 ## 📖 Utilisation
 
 ```bash
+# Avec bun run
 bun run index.ts <commande> [options]
+
+# Si installé globalement
+fmgr <commande> [options]
+
+# Exécution directe (si rendu exécutable)
+./index.ts <commande> [options]
 ```
 
 ### Commandes
@@ -122,8 +136,24 @@ Licence MIT
 
 ## 🤝 Contribution
 
-Les contributions sont les bienvenues ! N'hésitez pas à soumettre une Pull Request.
+Les contributions sont les bienvenues ! Veuillez suivre ces étapes :
 
-## 🐛 Support
+1. Fork le repository
+2. Créez une branche de fonctionnalité (`git checkout -b feature/fonctionnalite-incroyable`)
+3. Commitez vos changements (`git commit -m 'Ajouter fonctionnalité incroyable'`)
+4. Poussez vers la branche (`git push origin feature/fonctionnalite-incroyable`)
+5. Ouvrez une Pull Request
 
-Pour signaler des bugs ou demander des fonctionnalités, veuillez ouvrir une issue sur le repository GitHub.
+## 🐛 Issues & Support
+
+Si vous rencontrez des bugs ou avez des demandes de fonctionnalités, veuillez [ouvrir une issue](../../issues) sur GitHub.
+
+## 📊 Prérequis
+
+- **Bun** >= 1.0.0
+- **Node.js** (pour les tests de compatibilité)
+
+## 🔗 Projets Connexes
+
+- [Documentation Bun](https://bun.sh/docs)
+- [TypeScript](https://www.typescriptlang.org)
