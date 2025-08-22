@@ -21,7 +21,7 @@ A lightning-fast command-line tool for file operations (copy, move, organize) th
 
 ```bash
 # Clone and setup
-git clone <repository-url>
+git clone https://github.com/cheikhn414/bun-file-manager.git
 cd bun-file-manager
 bun install
 
